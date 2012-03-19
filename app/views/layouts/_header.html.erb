@@ -1,10 +1,20 @@
 <header>
-  <%= image_tag("logo.png", :alt => "Sample App", :class => "round") %>
+  <%= link_to logo, root_path %>
   <nav class="round">
     <ul>
-      <li><%= link_to "Home", '#' %></li>
-      <li><%= link_to "Help", '#' %></li>
-      <li><%= link_to "Sign in", '#' %></li>
+      <li><%= link_to "Home", root_path %></li>
+      <% if signed_in? %>
+      	<l1><%= link_to "Users", users_path %></l1>
+      	<li><%= link_to "Profile", current_user %></l1>
+      	<l1><%= link_to "Settings", edit_user_path(current_user) %></l1>
+      <% end %>
+      <li><%= link_to "Help", help_path %></li>
+      <% if signed_in? %>
+      	<l1><strong><%= link_to "Sign Out", signout_path, 
+      									:method => :delete %></strong></l1>
+      <% else %>
+      	<li><%= link_to "Sign In", signin_path %></li>
+      <% end %>
     </ul>
   </nav>
 </header>
