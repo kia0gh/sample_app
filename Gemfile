@@ -4,6 +4,8 @@ gem 'rails'
 gem 'gravatar_image_tag'
 gem 'sqlite3'
 
+
+gem 'bootstrap-sass', '2.0.0'
 group :development do
   gem 'rspec-rails'
   gem 'annotate'
