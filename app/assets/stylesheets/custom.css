@@ -22,6 +22,7 @@ section {
   background: #fff;
 }
 
+
 section h1 {
   font-size: 200%;
 }
@@ -29,7 +30,7 @@ section h1 {
 /* Links */
 
 a {
-  color: #09c;
+  color: #339;
   text-decoration: none;
 }
 
@@ -78,7 +79,7 @@ nav ul li a:hover {
 }
 /* Sign up button */
 
-asignup_button {
+a.signup_button {
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -92,7 +93,7 @@ asignup_button {
 }
 /* Round corners */
 
-round {
+.round {
   -moz-border-radius:    10px;
   -webkit-border-radius: 10px;
   border-radius:         10px;
