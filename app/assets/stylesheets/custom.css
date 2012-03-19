@@ -38,25 +38,7 @@ a:hover {
   color: #069;
   text-decoration: underline;
 }
-a.signup_button {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  text-align: center;
-  width: 190px;
-  color: #fff;
-  background: #006400;
-  font-size: 150%;
-  font-weight: bold;
-  padding: 20px;
-}
-/* Round corners */
 
-.round {
-  -moz-border-radius:    10px;
-  -webkit-border-radius: 10px;
-  border-radius:         10px;
-}
 a:visited {
   color: #069;
 }
@@ -95,6 +77,7 @@ nav ul li a:visited {
 nav ul li a:hover {
   text-decoration: underline;
 }
+<a class="button" href="#"><span>Bring world peace</span></a>
 /* Sign up button */
 
 a.signup_button {
